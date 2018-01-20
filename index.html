@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <title>Naptan bus_stops</title>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
+    <script src="ol.js"></script>
+    <script src="map.js"></script>
+    <link rel="stylesheet" type="text/css" href="map.css">
+    <link rel="stylesheet" type="text/css" href="ol.css">
+</head>
+<body>
+    <div id="map">
+
+    </div>
+
+    <div id='popup' class='ol-popup'>
+        <div id='popup-closer' class='ol-popup-closer'></div>
+        <div id='popup-content'>
+            <table>
+                <tr><td>Name</td><td id="stop-name"></td></tr>
+                <tr><td>Atco</td><td id="stop-atco"></td></tr>
+                <tr><td>Bear</td><td id="stop-bear"></td></tr>
+                <tr><td>Comm</td><td id="stop-common"></td></tr>
+                <tr><td>Indi</td><td id="stop-ind"></td></tr>
+                <tr><td>Land</td><td id="stop-landmark"></td></tr>
+                <tr><td>Loca</td><td id="stop-locality"></td></tr>
+                <tr><td>Napt</td><td id="stop-naptan"></td></tr>
+                <tr><td>Strt</td><td id="stop-street"></td></tr>
+                <tr><td>Ref</td><td id="stop-ref"></td></tr>
+                <tr><td>Status</td><td id="stop-status"></td></tr>
+            </table>
+            <div>
+                <button class="floatRight" id="import">Import</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
