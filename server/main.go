@@ -56,7 +56,7 @@ func setupApiHandler(csvFile string) (func(http.ResponseWriter, *http.Request), 
 			return
 		}
 
-		diff := 0.005
+		diff := 0.02
 		maxLat := lat + diff
 		minLat := lat - diff
 		minLon := lon - diff
@@ -76,6 +76,7 @@ func setupApiHandler(csvFile string) (func(http.ResponseWriter, *http.Request), 
 		}
 
 		writer.Header().Set("Content-Type", "application/json")
+		writer.Header().Set("Access-Control-Allow-Origin", "*")
 		writer.Write(bytes)
 	}, nil
 }
