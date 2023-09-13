@@ -7,6 +7,10 @@ OpenLayers webpage which displays data from a naptan CSV file and allows easy im
 * `awk -F '","'  'BEGIN {OFS=","} { if (tolower($22) == "lancaster")  print }' Stops.csv > data.csv`
 * Place `data.csv` in the same directory as `index.html`
 
+```shell
+go run server/main.go
+```
+
 ## OpenLayers
 `ol.css` and `ol.js` are OpenLayers files
 
