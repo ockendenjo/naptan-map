@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 addtags: tagStr,
             });
 
-            const url = "http://localhost:8112/add_node?" + params.toString();
+            const url = "add_node?" + params.toString();
             fetch(url);
         };
     }

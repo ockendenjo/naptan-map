@@ -9,4 +9,12 @@ export default {
             },
         },
     },
+    server: {
+        proxy: {
+            "/add_node": {
+                target: "http://localhost:8111",
+                changeOrigin: true,
+            },
+        },
+    },
 };
