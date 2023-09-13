@@ -8,7 +8,8 @@ OpenLayers webpage which displays data from a naptan CSV file and allows easy im
 * Place `data.csv` in the same directory as `index.html`
 
 ```shell
-go run server/main.go
+# Usage main.go <pathToStopsCSVFile>
+go run server/main.go ui/data.csv
 ```
 
 ## OpenLayers
