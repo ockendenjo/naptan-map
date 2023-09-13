@@ -1,0 +1,7 @@
+{
+    "__note__": "I don't think this file is actually used but it keeps the IDE happy",
+    "compilerOptions": {
+        "target": "es2020",
+        "moduleResolution": "Node"
+    }
+}
